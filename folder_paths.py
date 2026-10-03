@@ -111,7 +111,7 @@ extension_mimetypes_cache = {
 def map_legacy(folder_name: str) -> str:
     legacy = {"unet": "diffusion_models",
               "clip": "text_encoders"}
-    return legacy.get(folder_name, folder_name)
+    return legacy.get(folder_name.lower(), folder_name)
 
 if not os.path.exists(input_directory):
     try:
