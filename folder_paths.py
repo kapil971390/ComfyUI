@@ -587,3 +587,4 @@ def get_input_subfolders() -> list[str]:
         return sorted(folders)
     except FileNotFoundError:
         return []
+# retrigger after detector fix
